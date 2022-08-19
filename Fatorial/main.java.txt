@@ -1,0 +1,17 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(calcularFatorial(5));
+    }
+
+    private static int calcularFatorial(int valor){
+        if(valor == 0) {
+            return 1;
+        }
+
+        int resultado = calcularFatorial(valor - 1);
+        return valor * resultado;
+    }
+}
